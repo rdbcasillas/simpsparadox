@@ -30,15 +30,6 @@
                 conclusions. Students should be equipped to critically evaluate
                 data in such scenarios.
               </b-list-group-item>
-              <b-list-group-item>
-                <strong>
-                  Familiarize themselves with real-world examples where
-                  Simpson's Paradox manifests </strong
-                >. This includes but is not limited to fields like healthcare,
-                economics, and social sciences. Students should be able to
-                identify and discuss instances of the paradox in various
-                contexts.
-              </b-list-group-item>
             </b-list-group>
           </b-card-text>
         </b-card>

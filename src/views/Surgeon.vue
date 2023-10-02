@@ -2,10 +2,10 @@
   <b-container class="surgeonpage">
     <b-row>
       <b-col>
-        <h1>Help Your Friend Choose a Surgeon</h1>
+        <h1>Help Your Uncle Choose a Surgeon</h1>
         <p>
-          Imagine your friend needs a knee replacement surgery. You're helping
-          them choose a surgeon based on readmission rates after one year.
+          Imagine your Uncle needs a knee replacement surgery. You're helping
+          them choose a surgeon based on readmission rates after five years.
         </p>
       </b-col>
     </b-row>
@@ -23,7 +23,7 @@
           class="mb-2"
         >
           <b-card-text>
-            85% of knee surgeries performed don't need further repair for next 5
+            78% of knee surgeries performed don't need further repair for next 5
             years
           </b-card-text>
         </b-card>
@@ -41,7 +41,7 @@
           class="mb-2"
         >
           <b-card-text>
-            90% of knee surgeries performed don't need further repair for next 5
+            83% of knee surgeries performed don't need further repair for next 5
             years
           </b-card-text>
         </b-card>
@@ -50,7 +50,7 @@
     <!-- User Choice -->
     <b-row>
       <b-col>
-        <p>Which surgeon would you choose for your friend's surgery?</p>
+        <p>Which surgeon would you choose for your Uncle's knee surgery?</p>
         <b-form-radio-group v-model="selectedSurgeon">
           <b-form-radio value="Surgeon A" @change="updateSelectedSurgeon"
             >Surgeon A</b-form-radio
@@ -145,7 +145,7 @@ export default {
       showRealData: false,
       fields: [
         { key: "treatment", label: "Surgeon/Type" },
-        { key: "treatmentA", label: "Surgeon A" },
+        { key: "treatmentA", label: "Surgeon A", tdClass: "sur1" },
         { key: "treatmentB", label: "Surgeon B" },
       ],
       items: [
@@ -183,7 +183,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .card-text,
 .card-title {
   color: black;
@@ -194,5 +194,8 @@ export default {
 }
 .table {
   color: snow;
+}
+.sur1 {
+  font-weight: bold;
 }
 </style>

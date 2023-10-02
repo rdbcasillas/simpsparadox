@@ -3,6 +3,8 @@ import VueRouter from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import Surgeon from "../views/Surgeon.vue";
 import LearningObjective from "../views/LearningObjective.vue";
+import GraphViz1 from "../views/GraphViz1.vue";
+import GraphViz2 from "../views/GraphViz2.vue";
 
 Vue.use(VueRouter);
 
@@ -19,6 +21,16 @@ const router = new VueRouter({
       path: "/objective",
       name: "objective",
       component: LearningObjective,
+    },
+    {
+      path: "/graphviz1",
+      name: "graphviz1",
+      component: GraphViz1,
+    },
+    {
+      path: "/graphviz2",
+      name: "graphviz2",
+      component: GraphViz2,
     },
     {
       path: "/surgeon",

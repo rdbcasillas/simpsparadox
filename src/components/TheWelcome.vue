@@ -14,7 +14,7 @@ import SupportIcon from "./icons/IconSupport.vue";
         <DocumentationIcon />
       </template>
       <template #heading>
-        <router-link to="/objective">Learning Objective</router-link>
+        <router-link to="/objective">Learning Objectives</router-link>
       </template>
       What are we trying to do here?
     </WelcomeItem>
@@ -24,9 +24,11 @@ import SupportIcon from "./icons/IconSupport.vue";
         <ToolingIcon />
       </template>
       <template #heading>
-        <router-link to="/surgeon">Helping a friend</router-link>
+        <router-link to="/surgeon"
+          >Helping Uncle pick the right surgeon</router-link
+        >
       </template>
-      A friend needs to undergo knee replacement surgery. Can you help them
+      Your uncle needs to undergo a knee replacement surgery. Can you help them
       choose the right surgeon?
     </WelcomeItem>
 
@@ -35,7 +37,9 @@ import SupportIcon from "./icons/IconSupport.vue";
         <EcosystemIcon />
       </template>
       <template #heading>
-        <router-link to="/surgeon">More money = less happiness? </router-link>
+        <router-link to="/graphviz1"
+          >What’s wrong with people of Paradoxia?
+        </router-link>
       </template>
       Are the people in this city becoming unhappy with increasing income?
     </WelcomeItem>
@@ -45,20 +49,12 @@ import SupportIcon from "./icons/IconSupport.vue";
         <CommunityIcon />
       </template>
       <template #heading>
-        <router-link to="/surgeon">Is it really a paradox though? </router-link>
+        <router-link to="/"
+          >Unpacking the data from your lemonade business</router-link
+        >
       </template>
-    </WelcomeItem>
-
-    <WelcomeItem>
-      <template #icon>
-        <SupportIcon />
-      </template>
-      <template #heading>Support Vue</template>
-
-      As an independent project, Vue relies on community backing for its
-      sustainability. You can help us by
-      <a target="_blank" href="https://vuejs.org/sponsor/">becoming a sponsor</a
-      >.
+      Is it really a paradox? Let's deconstruct it by better understanding the
+      data from your lemonade business.
     </WelcomeItem>
   </div>
 </template>
